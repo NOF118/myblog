@@ -7,7 +7,7 @@ install:
 
 notifications:
   email:
-    - nuxseme@gmail.com
+    - chenzjnof118@163.com
   on_success: always
   on_failure: always
 
@@ -20,8 +20,8 @@ after_script:
   - cd ./public
   - ls -al
   - git init
-  - git config --global user.name "nuxseme"
-  - git config --global user.email "nuxseme@gmail.com"
+  - git config --global user.name "NOF118"
+  - git config --global user.email "chenzjnof118@163.com"
   - git add .
   - git commit -m "Auto deploy from Travis-CI "
   - git push --force  "https://${GH_TOKEN}@${GH_REF}" master:master
@@ -31,6 +31,6 @@ branches:
     - master
 env:
  global:
-   - GH_REF: github.com/nuxseme/nuxseme.github.com.git
+   - GH_REF: git@github.com:NOF118/myblog_publish.git
 
 
