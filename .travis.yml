@@ -31,6 +31,6 @@ branches:
     - master
 env:
  global:
-   - GH_REF: git@github.com:NOF118/myblog_publish.git
+   - GH_REF: github.com/NOF118/myblog_publish.git
 
 
