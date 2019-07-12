@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Nuxseme"
+keywords: "亡灵军团等待召唤"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -123,7 +123,7 @@ font:
 #social:
   #LinkLabel: Link
 social:
-  GitHub: https://github.com/nuxseme
+  GitHub: https://github.com/NOF118
 
 # Social Links Icons
 # Icon Mapping:
@@ -396,4 +396,4 @@ version: 5.0.1
 
 #自定义新增配置
 #since
-since: 2016
+since: 2019
