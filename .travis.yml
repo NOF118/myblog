@@ -1,0 +1,36 @@
+language: node_js
+node_js: stable
+
+install:
+  - npm install
+  - npm install hexo-cli -g
+
+notifications:
+  email:
+    - nuxseme@gmail.com
+  on_success: always
+  on_failure: always
+
+script:
+  - hexo -v
+  - hexo clean
+  - hexo g
+
+after_script:
+  - cd ./public
+  - ls -al
+  - git init
+  - git config --global user.name "nuxseme"
+  - git config --global user.email "nuxseme@gmail.com"
+  - git add .
+  - git commit -m "Auto deploy from Travis-CI "
+  - git push --force  "https://${GH_TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/nuxseme/nuxseme.github.com.git
+
+
